@@ -1,12 +1,345 @@
 <!DOCTYPE html>
-<html lang="ja">
+<html lang="en">
 <head>
 <meta charset="UTF-8">
-<title>ねこ～</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Rho17 · Portfolio</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&family=Noto+Sans+JP:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
-<h1>ねこ～</h1>
-<p>Rho17</p>
+<nav>
+  <div class="nav-inner">
+    <a href="#" class="nav-brand">Rho17's page</a>
+    <div class="nav-links">
+      <a href="#about"><span class="en">About</span><span class="ja">自己紹介</span></a>
+      <a href="#cv"><span class="en">CV</span><span class="ja">経歴</span></a>
+      <a href="#blog"><span class="en">Blog</span><span class="ja">ブログ</span></a>
+      <a href="#contact"><span class="en">Contact</span><span class="ja">連絡先</span></a>
+      <button class="theme-toggle" onclick="toggleLang()" id="lang-btn" aria-label="Toggle language">JP</button>
+      <button class="theme-toggle" onclick="toggleTheme()" id="theme-btn" aria-label="Toggle theme">☾</button>
+    </div>
+  </div>
+</nav>
+
+<main class="container">
+  <section class="hero">
+    <h1><span class="en">Rho17</span><span class="ja">Rho17</span></h1>
+    <div class="quick-links">
+        <a href="https://atcoder.jp/users/Rho17" target="_blank" title="Rho17"><img src="https://img.shields.io/endpoint?url=https%3A%2F%2Fatcoder-badges.now.sh%2Fapi%2Fatcoder%2Fjson%2FRho17" /></a>
+        <a href="https://codeforces.com/profile/ryotori" target="_blank" title="ryotori"><img src="https://img.shields.io/endpoint?url=https%3A%2F%2Fatcoder-badges.now.sh%2Fapi%2Fcodeforces%2Fjson%2Fryotori" /></a>
+      <a href="https://github.com/ZenReKkyo" target="_blank" rel="noopener">⚡ github</a>
+      <a href="https://twitter.com/Rho4913?ref_src=twsrc%5Etfw" class="twitter-follow-button" data-show-count="false">Follow @Rho4913</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+    </div>
+  </section>
+
+  <section id="about" class="about">
+    <h2><span class="en">about</span><span class="ja">自己紹介</span></h2>
+    <div class="en">
+      <p>Competitive programmer</p>
+    </div>
+    <div class="ja">
+      <p>競技プログラミングをしています</p>
+
+    </div>
+    <div class="highlights en">
+      <span class="highlight"><span class="key">affiliation:</span> The University of Tokyo</span>
+      <span class="highlight"><span class="key">atcoder_rating (Algo):</span> Max 2200+</span>
+      <span class="highlight"><span class="key">langs:</span> C++, python</span>
+    </div>
+    <div class="highlights ja">
+      <span class="highlight"><span class="key">所属:</span> 東京大学</span>
+      <span class="highlight"><span class="key">AtCoderレート(Algo):</span> Max 2200+</span>
+      <span class="highlight"><span class="key">言語:</span> C++, python</span>
+    </div>
+  </section>
+
+  <section id="cv">
+    <h2><span class="en">cv</span><span class="ja">経歴</span></h2>
+
+    <div class="cv-group">
+      <h3><span class="en">Education</span><span class="ja">学歴</span></h3>
+      <div class="en">
+        <div class="cv-item">
+          <div class="cv-date">2026 — now</div>
+          <div>
+            <div class="cv-title">Master's Program in Computer Science</div>
+            <div class="cv-subtitle">Graduate School of Information Science and Technology, The University of Tokyo</div>
+          </div>
+        </div>
+        <div class="cv-item">
+          <div class="cv-date">2024 — 2026</div>
+          <div>
+            <div class="cv-title">B.Sc. in Computer Science</div>
+            <div class="cv-subtitle">Department of Information Science, School of Science, The University of Tokyo</div>
+          </div>
+        </div>
+        <div class="cv-item">
+          <div class="cv-date">2022 — 2024</div>
+          <div>
+            <div class="cv-title">Natural Sciences I, Junior Division</div>
+            <div class="cv-subtitle">College of Arts and Sciences, The University of Tokyo</div>
+          </div>
+        </div>
+        <div class="cv-item">
+          <div class="cv-date">2016 — 2022</div>
+          <div>
+            <div class="cv-title">Junior and Senior High School at Komaba, University of Tsukuba</div>
+          </div>
+        </div>
+      </div>
+      <div class="ja">
+        <div class="cv-item">
+          <div class="cv-date">2026 — now</div>
+          <div>
+            <div class="cv-title">CS専攻 修士課程</div>
+            <div class="cv-subtitle">東京大学 情報理工学系研究科</div>
+          </div>
+        </div>
+        <div class="cv-item">
+          <div class="cv-date">2024 — 2026</div>
+          <div>
+            <div class="cv-title">学士(理学)</div>
+            <div class="cv-subtitle">東京大学理学部情報科学科</div>
+          </div>
+        </div>
+        <div class="cv-item">
+          <div class="cv-date">2022 — 2024</div>
+          <div>
+            <div class="cv-title">東京大学理科1類 前期教養課程 修了</div>
+          </div>
+        </div>
+        <div class="cv-item">
+          <div class="cv-date">2016 — 2022</div>
+          <div>
+            <div class="cv-title">筑波大学附属駒場中・高等学校 卒業</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="cv-group">
+      <h3><span class="en">Competitive Programming</span><span class="ja">競技プログラミング</span></h3>
+      <div class="en">
+        <div class="cv-item">
+          <div class="cv-date">2021</div>
+          <div>
+            <div class="cv-title">PC Koshien 2021 (Programming Division) — 3rd in qualifier / 6th in finals</div>
+            <div class="cv-subtitle">National High School Computer Contest (PC Koshien)</div>
+          </div>
+        </div>
+        <div class="cv-item">
+          <div class="cv-date">2021</div>
+          <div>
+            <div class="cv-title">JOI 2020-2021 — Qualifier Rank A</div>
+            <div class="cv-subtitle">Japanese Olympiad in Informatics</div>
+          </div>
+        </div>
+        <div class="cv-item">
+          <div class="cv-date">2020</div>
+          <div>
+            <div class="cv-title">SuperCon 2020 — Qualified for finals (Team OverJOI)</div>
+            <div class="cv-subtitle">Supercomputing Contest / Fugaku Challenge</div>
+          </div>
+        </div>
+        <div class="cv-item">
+          <div class="cv-date">2020</div>
+          <div>
+            <div class="cv-title">JOI 2019-2020 — Qualifier Rank A</div>
+            <div class="cv-subtitle">Japanese Olympiad in Informatics</div>
+          </div>
+        </div>
+        <div class="cv-item">
+          <div class="cv-date">2019</div>
+          <div>
+            <div class="cv-title">SuperCon 2019 — Qualified for finals (Team deforest)</div>
+            <div class="cv-subtitle">Supercomputing Contest</div>
+          </div>
+        </div>
+        <div class="cv-item">
+          <div class="cv-date">2018</div>
+          <div>
+            <div class="cv-title">JOI 2017-2018 — Qualifier Rank A</div>
+            <div class="cv-subtitle">Japanese Olympiad in Informatics</div>
+          </div>
+        </div>
+      </div>
+      <div class="ja">
+        
+        <div class="cv-item">
+          <div class="cv-date">2021</div>
+          <div>
+            <div class="cv-title">パソコン甲子園2021プログラミング部門 予選3位/本選入賞(6位)</div>
+            <div class="cv-subtitle">パソコン甲子園</div>
+          </div>
+        </div>
+        <div class="cv-item">
+          <div class="cv-date">2021</div>
+          <div>
+            <div class="cv-title">情報オリンピック2020-2021 予選Aランク</div>
+            <div class="cv-subtitle">日本情報オリンピック</div>
+          </div>
+        </div>
+        <div class="cv-item">
+          <div class="cv-date">2020</div>
+          <div>
+            <div class="cv-title">SuperCon2020 予選通過 (チームOverJOI) </div>
+            <div class="cv-subtitle">Supercomputing Programming Contest/富岳チャレンジ </div>
+          </div>
+        </div>
+        <div class="cv-item">
+          <div class="cv-date">2020</div>
+          <div>
+            <div class="cv-title">情報オリンピック2019-2020 予選Aランク</div>
+            <div class="cv-subtitle">日本情報オリンピック</div>
+          </div>
+        </div>
+        <div class="cv-item">
+          <div class="cv-date">2019</div>
+          <div>
+            <div class="cv-title">SuperCon2019 予選通過 (チームdeforest) </div>
+            <div class="cv-subtitle">Supercomputing Programming Contest </div>
+          </div>
+        </div>
+        <div class="cv-item">
+          <div class="cv-date">2018</div>
+          <div>
+            <div class="cv-title">情報オリンピック2017-2018 予選Aランク</div>
+            <div class="cv-subtitle">日本情報オリンピック</div>
+          </div>
+        </div>
+      </div>
+      </div>
+    </div>
+
+    <div class="cv-project">
+      <h3><span class="en">Projects</span><span class="ja">プロジェクト</span></h3>
+      <div class="en">
+        <div class="cv-item">
+          <div class="cv-date">2025</div>
+          <div>
+            <div class="cv-title">Google-UTokyo Quantum Partnership — Undergraduate Research Experience</div>
+            <div class="cv-subtitle">The University of Tokyo</div>
+          </div>
+        </div>
+      </div>
+      <div class="ja">
+        <div class="cv-item">
+          <div class="cv-date">2025</div>
+          <div>
+            <div class="cv-title">Google-UTokyo 量子パートナーシップ 学部学生研究体験活動</div>
+            <div class="cv-subtitle">東京大学</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="cv-group">
+      <h3><span class="en">Teaching</span><span class="ja">教育活動</span></h3>
+      <div class="en">
+        <div class="cv-item">
+          <div class="cv-date">2026 S Semester</div>
+          <div>
+            <div class="cv-title">Teaching Assistant — Hardware Laboratory</div>
+            <div class="cv-subtitle">The University of Tokyo</div>
+          </div>
+        </div>
+      </div>
+      <div class="ja">
+        <div class="cv-item">
+          <div class="cv-date">2026年Sセメスター</div>
+          <div>
+            <div class="cv-title">TA — ハードウエア実験</div>
+            <div class="cv-subtitle">東京大学</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="cv-group">
+      <h3><span class="en">Presentations</span><span class="ja">発表</span></h3>
+      <div class="en">
+        <div class="cv-item">
+          <div class="cv-date">2020</div>
+          <div>
+            <div class="cv-title">JOI Summer Seminar 2020 <a href="https://speakerdeck.com/zenrekkyo/joi2020ss-gao-ci-fang-cheng-shi-wojie-ku" target="_blank" rel="noopener">[Slide]</a></div>
+            <div class="cv-subtitle">The Japanese Committee for International Olympiad in Informatics</div>
+          </div>
+        </div>
+        <div class="cv-item">
+          <div class="cv-date">2019</div>
+          <div>
+            <div class="cv-title">JOI Summer Seminar 2019</div>
+            <div class="cv-subtitle">The Japanese Committee for International Olympiad in Informatics</div>
+          </div>
+        </div>
+      </div>
+      <div class="ja">
+        <div class="cv-item">
+          <div class="cv-date">2020</div>
+          <div>
+            <div class="cv-title">JOI夏季セミナー2020 <a href="https://speakerdeck.com/zenrekkyo/joi2020ss-gao-ci-fang-cheng-shi-wojie-ku" target="_blank" rel="noopener">[Slide]</a> </div>
+            <div class="cv-subtitle">情報オリンピック日本委員会</div>
+          </div>
+        </div>
+        
+        <div class="cv-item">
+          <div class="cv-date">2019</div>
+          <div>
+            <div class="cv-title">JOI夏季セミナー2019</div>
+            <div class="cv-subtitle">情報オリンピック日本委員会</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+</main>
+
+<footer>
+  <span class="en">© 2026 Rho17 · built with html, css &amp; ☕</span>
+  <span class="ja">© 2026 Rho17 · html, css &amp; ☕ で制作</span>
+</footer>
+
+<script>
+  // Theme
+  const themeBtn = document.getElementById('theme-btn');
+  const prefersDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+  let theme = prefersDark ? 'dark' : 'light';
+
+  function applyTheme() {
+    document.documentElement.setAttribute('data-theme', theme);
+    themeBtn.textContent = theme === 'dark' ? '☀' : '☾';
+  }
+
+  function toggleTheme() {
+    theme = theme === 'dark' ? 'light' : 'dark';
+    applyTheme();
+  }
+
+  // Language
+  const langBtn = document.getElementById('lang-btn');
+  const browserLang = (navigator.language || 'en').toLowerCase();
+  let lang = browserLang.startsWith('en') ? 'en' : 'ja';
+
+  function applyLang() {
+    document.documentElement.setAttribute('data-lang', lang);
+    document.documentElement.setAttribute('lang', lang);
+    langBtn.textContent = lang === 'ja' ? 'EN' : 'JP';
+    document.title = lang === 'ja' ? 'Rho17 · ポートフォリオ' : 'Rho17 · Portfolio';
+  }
+
+  function toggleLang() {
+    lang = lang === 'ja' ? 'en' : 'ja';
+    applyLang();
+  }
+
+  applyTheme();
+  applyLang();
+</script>
 </body>
 </html>
- 
